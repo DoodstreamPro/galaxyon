@@ -1,0 +1,106 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  height: 100vh; /* Full height viewport */
+  overflow: hidden; /* No scrolling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column; /* Make the body flex column to position footer at the bottom */
+}
+
+/* Video Container */
+.video-container {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  overflow: hidden;
+  width: 90%;
+  max-width: 800px;
+  max-height: 80vh; /* Max height of 80% of the viewport height */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure space between video and button */
+  padding-bottom: 10px; /* Ensure enough space at the bottom */
+}
+
+.video-header {
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.video-header h1 {
+  font-size: 24px;
+  color: #fff;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+video {
+  max-width: 100%;
+  max-height: 60vh; /* Ensure the video doesn't take up more than 60% of the viewport height */
+  display: block;
+  object-fit: contain;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn-container {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ensure full width for WhatsApp button container */
+  position: relative;
+  z-index: 1; /* Ensure the button stays on top */
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  background: #25d366;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.whatsapp-btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #ffffffb3;
+  font-size: 14px;
+  position: absolute; /* Set footer at the bottom */
+  bottom: 10px;
+  width: 100%; /* Ensure it takes up the full width */
+}
